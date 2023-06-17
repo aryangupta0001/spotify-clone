@@ -5,7 +5,7 @@
 }
 
 :root{
-    --primary-bkg : rgb(18, 18, 18);
+    --primary-bkg : rgb(21, 21, 21);
 }
 
 .p-font{
@@ -14,6 +14,11 @@
 
 .flex{
     display: flex;
+}
+
+.btn{
+    cursor: pointer;
+    text-decoration: none;
 }
 
 html{
@@ -26,31 +31,34 @@ body{
     height: fit-content;
     
     padding: 0px;
+
+    justify-content: space-evenly;
 }
 
 #left-pane{
-    width: 22%;
+    width: 23%;
     height: 90vh;
 }
 
 #upper-left-sec{
-    height: 15%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 15.5%;
     background-color: var(--primary-bkg);
     border-radius: 8px;
 
-    margin: 8px;
+    margin: 8px 0px;
 }
 
 #upper-left-sec div {
     align-items: center;
     width: 100%;
-    height: 50%;
-    padding: 10px;
+    height: 30%;
 }
 
 #upper-left-sec div img{
     height: 100%;
-
+    padding: 2px;
     margin: 0 15px;
 }
 
@@ -66,35 +74,60 @@ body{
     background-color: var(--primary-bkg);
     border-radius: 8px;
     
-    margin: 8px ;
+    margin: 8px 0px;
     padding: 10px;
+
 }
 
-.btn{
-    cursor: pointer;
-    text-decoration: none;
-}
 
-#lower-left-sec button{
-
+#lib-sec{
     height: 5%;
-
-    background: none;
+    font-size: 2rem;
     color: white;
-    font-size: 1.5rem;
 
-    align-items: center;
+    align-content: center;
+    justify-content: space-between; 
+
 }
 
-#lower-left-sec button img{
+#lib-sec a{
+    background: none;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+#lib-sec a img{
     max-height: 100%;
     margin: 0 15px;
 }
 
+#create-playlist{
+    background-color: rgb(35, 35, 35);
+    color: white;
+
+    border: 1px solid transparent;
+    border-radius: 8px;
+
+    margin: 15px 0;
+}
+
+#create-playlist>p{
+    margin: 10px;
+    font-size: 1.2rem;
+}
+
+#create-playlist>p+p{
+    margin: 10px;
+    font-size: 1.1rem;
+}
+
+#create-playlist button{
+
+}
 
 
 #right-pane{
-    width: 78%;
+    width: 77%;
     height: 90vh;
     border-radius: 8px;
     margin: 8px;
@@ -102,7 +135,7 @@ body{
 }
 
 #top-right{
-    height: 10%;
+    height: 9%;
     background-color: var(--primary-bkg);
     position: sticky;
     top: 0;

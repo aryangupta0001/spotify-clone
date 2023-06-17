@@ -9,7 +9,7 @@
 </head>
 <body class="flex">
     <div id="left-pane">
-        <div id="upper-left-sec">
+        <div id="upper-left-sec" class="flex">
 
             <div class="flex">
                 <img src="./images/home.png" alt="home icon">
@@ -23,10 +23,22 @@
         </div>
 
         <div id="lower-left-sec">
-            <button class="btn flex ">
-                <img src="./images/lib.png" alt="lib-icon">
-                <span class="p-font">Your Library</span>
-            </button>
+            <div id="lib-sec" class="flex">
+                <a class="flex">
+                    <img src="./images/lib.png" alt="lib-icon">
+                    <span class="p-font">Your Library</span>
+                </a>
+
+                <span>+</span>
+            </div>
+
+            <div id="create-playlist" class="p-font">
+
+                <p>Create your first playlist</p>
+                <p>It's easy, we'll help you</p>
+
+                <button>Create playlist</button>
+            </div>
         </div>
     </div>
 
