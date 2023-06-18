@@ -6,6 +6,8 @@
 
 :root{
     --primary-bkg : rgb(21, 21, 21);
+
+    /* font-family: var(--font-family,CircularSpTitle,CircularSpTitle-Tall,CircularSp-Arab,CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva,var(--fallback-fonts,sans-serif)); */
 }
 
 .p-font{
@@ -19,6 +21,10 @@
 .btn{
     cursor: pointer;
     text-decoration: none;
+}
+
+.bold{
+    font-weight: bold;
 }
 
 html{
@@ -88,12 +94,14 @@ body{
     align-content: center;
     justify-content: space-between; 
 
+    margin: 5px;
+
 }
 
 #lib-sec a{
     background: none;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 #lib-sec a img{
@@ -101,48 +109,119 @@ body{
     margin: 0 15px;
 }
 
-#create-playlist{
+.lower-left-card{
     background-color: rgb(35, 35, 35);
     color: white;
 
     border: 1px solid transparent;
     border-radius: 8px;
 
-    margin: 15px 0;
+    margin: 25px 0;
 }
 
-#create-playlist>p{
-    margin: 10px;
+.lower-left-card>p{
+    margin: 15px;
     font-size: 1.2rem;
 }
 
-#create-playlist>p+p{
-    margin: 10px;
+.lower-left-card>p+p{
+    margin: 15px;
     font-size: 1.1rem;
 }
 
-#create-playlist button{
-
+.lower-left-card button{
+    margin: 13px;
+    border-radius: 20px;
+    padding: 10px;
 }
 
 
 #right-pane{
     width: 77%;
-    height: 90vh;
+    /* height: 90vh; */
     border-radius: 8px;
     margin: 8px;
     
 }
 
 #top-right{
-    height: 9%;
+    height: 8vh;
     background-color: var(--primary-bkg);
     position: sticky;
     top: 0;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 30px;
+}
+
+#top-right>div button{
+    background-color: black;
+    
+    border: none;
+    border-radius: 50%;
+    
+    font-size: 1.5rem;
+    
+    padding: 5px 12px;
+    margin: 2px;
+  
+}
+
+#top-right>div+div>button{
+    background: none;
+    color: white;
+    
+    border: none;
+    
+    font-size: 1.1rem;
+}
+
+#top-right>div+div>button+button{
+    background: white;
+    color: black;
+    
+    border: none;
+    border-radius: 30px;
+    
+    font-size: 1.1rem;
+
+    padding: 15px 32px;
+    margin: 2px;
+
 }
 
 #main-right{
-    height: 90%;
+    height: fit-content;
 
     background: linear-gradient(rgb(35, 35, 35), var(--primary-bkg));
+}
+
+#focus{
+    height: 33vh;
+}
+
+#focus>div{
+    height: fit-content;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#focus>div button{
+    background: none;
+    border: none;
+    color: white;
+}
+
+#focus>div>button{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 7px 22px;
+}
+
+#focus>div>button + button{
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 7px 22px;
 }
