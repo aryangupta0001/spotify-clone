@@ -187,7 +187,11 @@ body{
 
 #top-right>div+div>button:hover{
     color: white;
+  transform: scale(1.001);
 }
+
+
+
 
 #top-right>div+div>button+button{
     background: white;
@@ -199,9 +203,18 @@ body{
     font-size: 1.1rem;
 
     padding: 15px 32px;
-    margin: 2px;
+    margin: 2px 5px;
 
 }
+
+#top-right>div+div>button+button:hover{
+    color: black;
+    /* font-size: 1.2em; */
+    position: relative;
+    transform: scale(1.05);
+
+}
+
 
 #main-right{
     height: fit-content;
@@ -238,7 +251,6 @@ body{
 }
 
 #focus>div>button:hover{
-    cursor: pointer;
     text-underline-offset: 2px;
     text-underline-position: below;
     text-decoration: underline;
