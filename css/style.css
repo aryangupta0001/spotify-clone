@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -6,6 +9,8 @@
 
 :root{
     --primary-bkg : rgb(18, 18, 18);
+    --def-color : rgb(167, 167, 167);
+
 
     /* font-family: var(--font-family,CircularSpTitle,CircularSpTitle-Tall,CircularSp-Arab,CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva,var(--fallback-fonts,sans-serif)); */
 }
@@ -30,6 +35,8 @@
 .pointer{
     cursor: pointer;
 }
+
+
 html{
     font-size: 14px;
 }
@@ -37,16 +44,27 @@ html{
 body{
     background-color: black;
     width: 100vw;
-    height: fit-content;
+    height: 100vh;
+    border: 1px solid transparent;
     
-    padding: 0px;
+    padding: 4px;
 
     justify-content: space-evenly;
+    flex-direction: column;
 }
 
+#hero{
+    height: 88vh;
+    border: 1px solid transparent;
+}
+
+
+
 #left-pane{
+    border: 1px solid transparent;
+
     width: 23%;
-    height: 90vh;
+    height: 100%;
 }
 
 #upper-left-sec{
@@ -65,7 +83,8 @@ body{
     height: 30%;
 }
 
-#upper-left-sec div img{
+#upper-left-sec div svg{
+    /* display: block; */
     height: 100%;
     padding: 2px;
     margin: 0 15px;
@@ -78,8 +97,33 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+#upper-left-sec div+div svg{
+    fill: var(--def-color);
+}
+
+
+#upper-left-sec div+div span{
+    color: var(--def-color);
+    font-size: 1.5rem;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+#upper-left-sec div+div svg:hover{
+    fill: rgb(255, 255, 255);
+}
+
+
+#upper-left-sec div+div span:hover{
+    color: white;
+}
+
+
+
+
 #lower-left-sec{
-    height: 80%;    
+    height: 83.4%;    
     background-color: var(--primary-bkg);
     border-radius: 8px;
     
@@ -134,17 +178,68 @@ body{
 
 .lower-left-card button{
     margin: 13px;
+    border: none;
     border-radius: 20px;
     padding: 10px;
 }
 
+#foot-links{
+    background: none;
+    width: 100%;
+    padding: 10px;
+}
+
+#foot-links a{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(183, 182, 182);
+    margin: 8px;
+
+    /* font-family: 'Courier New', Courier, monospace; */
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 0.8rem;
+    
+}
+
+#foot-links a:visited{
+    color: rgb(183, 182, 182);
+}
+
+
+#foot-links button{
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 10px 0px;
+    padding: 5px 10px;
+
+    font-size: 1rem;
+    color: white;
+
+    height: 2.5rem;
+
+    border: 0.25px solid white;
+    border-radius: 25px;
+    background: none;
+
+
+}
+
+#foot-links button img{
+    max-height: 100%;
+    margin-right: 5px;
+}
 
 #right-pane{
-    width: 77%;
-    /* height: 90vh; */
+    border: 1px solid transparent;
+    width: 78%;
+    height: 100%;
     border-radius: 8px;
     margin: 8px;
-    
+
+    overflow-y: scroll;
 }
 
 #top-right{
@@ -174,7 +269,7 @@ body{
 
 #top-right>div+div>button{
     background: none;
-    color: rgb(183  , 182, 182);
+    color: rgb(183, 182, 182);
     
     border: none;
     border-radius: 0px;
@@ -219,50 +314,56 @@ body{
 #main-right{
     height: fit-content;
 
-    background: linear-gradient(rgb(31, 31, 31), var(--primary-bkg));
 }
 
 .section{
     height: 50vh;
+    background-color: var(--primary-bkg);
+    /* border: 1px solid white; */
+
 }
 
-#focus{
+.section-head{
     height: fit-content;
     width: 100%;
     justify-content: space-between;
 }
 
-#focus button{
+.section-head button{
     background: none;
     border: none;
     color: white;
 }
 
-#focus>button{
+.section-head>button{
     font-size: 1.5rem;
     font-weight: bold;
     margin: 7px 22px;
 }
 
-#focus>button + button{
+.section-head>button + button{
     font-size: 1rem;
     font-weight: normal;
     margin: 7px 22px;
 }
 
-#focus>button:hover{
+.section-head>button:hover{
     text-underline-offset: 2px;
     text-underline-position: below;
     text-decoration: underline;
     text-decoration-thickness: 2px;
 }
 
-#focus>button + button{
+.section-head>button + button{
     font-size: 1rem;
     font-weight: normal;
     margin: 7px 22px;
 }
 
+
+#focus-sec{
+    background: linear-gradient(rgb(31, 31, 31), var(--primary-bkg));
+}
 
 
 
@@ -270,7 +371,8 @@ body{
     height: 80%;
     width: 100%;
     /* border: 1px solid white; */
-    margin: 25px 0px;
+    /* margin: 10px 0px; */
+    margin-top: 15px;
 }
 
 .card{
@@ -280,13 +382,14 @@ body{
     height: 100%;
     margin: auto;
     padding: 15px;
-    background-color: var(--primary-bkg);
+    padding-bottom: 0px;
+    background-color: rgb(25, 25, 25);
     
 }
 
 .card:hover{
     background-color: rgb(38, 38, 38);
-
+    
 }
 
 .card-image{
@@ -305,14 +408,60 @@ body{
 
 
 .card-text>p{
+    display: block;
     font-size: 1.2rem;
     color: white;
-    margin: 15px 0;
+    margin: 5px 0;
+    border: 1px solid transparent;
 }
 
 .card-text>p+p{
+    display: block;
     font-size: 1.1rem;
     color: rgb(183, 182, 182);
-    margin: 15px 0;
+    margin: 5px 0;
+    border: 1px solid transparent;
+    
+}
 
+
+
+
+#footer{
+    background: linear-gradient(to right, rgba(175,40,150,255), rgba(80,155,245,255));
+    border: 1px solid transparent;
+    position: sticky;
+    bottom: 0;
+    height: 8vh;
+    width: 99%;
+    margin: 10px 5px 0px 5px;
+    padding: 10px;
+
+    justify-content: space-between;
+    align-items: center;
+
+    color: white;
+}
+
+#footer>div>p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 50;
+}
+
+#footer>div>p+p{
+    font-weight: bold;
+}
+
+
+#footer button{
+    font-size: 1rem;
+    font-weight: bold;
+    
+    padding: 15px 25px;
+
+    border: none;
+    border-radius: 25px;
+    background-color: white;
+
+    margin: 0px 15px;
 }
