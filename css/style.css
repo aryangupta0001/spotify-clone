@@ -5,7 +5,7 @@
 }
 
 :root{
-    --primary-bkg : rgb(21, 21, 21);
+    --primary-bkg : rgb(18, 18, 18);
 
     /* font-family: var(--font-family,CircularSpTitle,CircularSpTitle-Tall,CircularSp-Arab,CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva,var(--fallback-fonts,sans-serif)); */
 }
@@ -174,7 +174,7 @@ body{
 
 #top-right>div+div>button{
     background: none;
-    color: rgb(183, 182, 182);
+    color: rgb(183  , 182, 182);
     
     border: none;
     border-radius: 0px;
@@ -219,46 +219,100 @@ body{
 #main-right{
     height: fit-content;
 
-    background: linear-gradient(rgb(35, 35, 35), var(--primary-bkg));
+    background: linear-gradient(rgb(31, 31, 31), var(--primary-bkg));
+}
+
+.section{
+    height: 50vh;
 }
 
 #focus{
-    height: 33vh;
-}
-
-#focus>div{
     height: fit-content;
     width: 100%;
     justify-content: space-between;
 }
 
-#focus>div button{
+#focus button{
     background: none;
     border: none;
     color: white;
 }
 
-#focus>div>button{
+#focus>button{
     font-size: 1.5rem;
     font-weight: bold;
     margin: 7px 22px;
 }
 
-#focus>div>button + button{
+#focus>button + button{
     font-size: 1rem;
     font-weight: normal;
     margin: 7px 22px;
 }
 
-#focus>div>button:hover{
+#focus>button:hover{
     text-underline-offset: 2px;
     text-underline-position: below;
     text-decoration: underline;
     text-decoration-thickness: 2px;
 }
 
-#focus>div>button + button{
+#focus>button + button{
     font-size: 1rem;
     font-weight: normal;
     margin: 7px 22px;
+}
+
+
+
+
+.cards{
+    height: 80%;
+    width: 100%;
+    /* border: 1px solid white; */
+    margin: 25px 0px;
+}
+
+.card{
+    width: 18%;
+    /* border: 1px solid white; */
+    border-radius: 8px;
+    height: 100%;
+    margin: auto;
+    padding: 15px;
+    background-color: var(--primary-bkg);
+    
+}
+
+.card:hover{
+    background-color: rgb(38, 38, 38);
+
+}
+
+.card-image{
+    height: 65%;
+    /* border: 1px solid white; */
+}
+
+.card-image>img{
+    /* max-height: 100%; */
+    border-radius: 5px;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+
+
+.card-text>p{
+    font-size: 1.2rem;
+    color: white;
+    margin: 15px 0;
+}
+
+.card-text>p+p{
+    font-size: 1.1rem;
+    color: rgb(183, 182, 182);
+    margin: 15px 0;
+
 }
