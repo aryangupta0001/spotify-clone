@@ -1,73 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
-    --primary-bkg : rgb(18, 18, 18);
-    --def-color : rgb(167, 167, 167);
+:root {
+    --primary-bkg: rgb(18, 18, 18);
+    --def-color: rgb(167, 167, 167);
 
 
     /* font-family: var(--font-family,CircularSpTitle,CircularSpTitle-Tall,CircularSp-Arab,CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva,var(--fallback-fonts,sans-serif)); */
 }
 
-.p-font{
+.p-font {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
-.btn{
+.btn {
     cursor: pointer;
     text-decoration: none;
 }
 
-.bold{
+.bold {
     font-weight: bold;
 }
 
-.pointer{
+.pointer {
     cursor: pointer;
 }
 
 
-html{
+html {
     font-size: 14px;
 }
 
-body{
+body {
     background-color: black;
     width: 100vw;
     height: 100vh;
     border: 1px solid transparent;
-    
+
     padding: 4px;
 
     justify-content: space-evenly;
     flex-direction: column;
 }
 
-#hero{
+#hero {
     height: 88vh;
     border: 1px solid transparent;
 }
 
 
 
-#left-pane{
+#left-pane {
     border: 1px solid transparent;
 
     width: 23%;
     height: 100%;
 }
 
-#upper-left-sec{
+#upper-left-sec {
     flex-direction: column;
     justify-content: space-evenly;
     height: 15.5%;
@@ -83,26 +83,26 @@ body{
     height: 30%;
 }
 
-#upper-left-sec div svg{
+#upper-left-sec div svg {
     /* display: block; */
     height: 100%;
     padding: 2px;
     margin: 0 15px;
 }
 
-#upper-left-sec div span{
+#upper-left-sec div span {
     color: white;
     font-size: 1.5rem;
 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-#upper-left-sec div+div svg{
+#upper-left-sec div+div svg {
     fill: var(--def-color);
 }
 
 
-#upper-left-sec div+div span{
+#upper-left-sec div+div span {
     color: var(--def-color);
     font-size: 1.5rem;
 
@@ -110,53 +110,53 @@ body{
 }
 
 
-#upper-left-sec div+div svg:hover{
+#upper-left-sec div+div svg:hover {
     fill: rgb(255, 255, 255);
 }
 
 
-#upper-left-sec div+div span:hover{
+#upper-left-sec div+div span:hover {
     color: white;
 }
 
 
 
 
-#lower-left-sec{
-    height: 83.4%;    
+#lower-left-sec {
+    height: 83.4%;
     background-color: var(--primary-bkg);
     border-radius: 8px;
-    
+
     margin: 8px 0px;
     padding: 10px;
 
 }
 
 
-#lib-sec{
+#lib-sec {
     height: 5%;
     font-size: 2rem;
     color: white;
 
     align-content: center;
-    justify-content: space-between; 
+    justify-content: space-between;
 
     margin: 5px;
 
 }
 
-#lib-sec a{
+#lib-sec a {
     background: none;
     align-items: center;
     font-size: 1.2rem;
 }
 
-#lib-sec a img{
+#lib-sec a img {
     max-height: 100%;
     margin: 0 15px;
 }
 
-.lower-left-card{
+.lower-left-card {
     background-color: rgb(35, 35, 35);
     color: white;
 
@@ -166,30 +166,30 @@ body{
     margin: 25px 0;
 }
 
-.lower-left-card>p{
+.lower-left-card>p {
     margin: 15px;
     font-size: 1.2rem;
 }
 
-.lower-left-card>p+p{
+.lower-left-card>p+p {
     margin: 15px;
     font-size: 1.1rem;
 }
 
-.lower-left-card button{
+.lower-left-card button {
     margin: 13px;
     border: none;
     border-radius: 20px;
     padding: 10px;
 }
 
-#foot-links{
+#foot-links {
     background: none;
     width: 100%;
     padding: 10px;
 }
 
-#foot-links a{
+#foot-links a {
     display: inline-block;
     text-decoration: none;
     color: rgb(183, 182, 182);
@@ -200,15 +200,15 @@ body{
     /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 0.8rem;
-    
+
 }
 
-#foot-links a:visited{
+#foot-links a:visited {
     color: rgb(183, 182, 182);
 }
 
 
-#foot-links button{
+#foot-links button {
     justify-content: space-between;
     align-items: center;
 
@@ -227,22 +227,39 @@ body{
 
 }
 
-#foot-links button img{
+#foot-links button img {
     max-height: 100%;
     margin-right: 5px;
 }
 
-#right-pane{
+#right-pane {
     border: 1px solid transparent;
     width: 78%;
     height: 100%;
     border-radius: 8px;
     margin: 8px;
-
     overflow-y: scroll;
+
 }
 
-#top-right{
+#main-right {
+}
+
+#main-right::-webkit-scrollbar {
+    width: 12px;
+    background-color: none;
+}
+
+#main-right::-webkit-scrollbar-thumb {
+    background-color: rgba(93, 93, 93, 255);
+}
+
+#main-right::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(142,142,142,255);
+}
+
+
+#top-right {
     height: 8vh;
     background-color: var(--primary-bkg);
     position: sticky;
@@ -254,47 +271,47 @@ body{
     padding: 30px;
 }
 
-#top-right>div button{
+#top-right>div button {
     background-color: black;
-    
+
     border: none;
     border-radius: 50%;
-    
+
     font-size: 1.5rem;
-    
+
     padding: 5px 12px;
     margin: 2px;
-  
+
 }
 
-#top-right>div+div>button{
+#top-right>div+div>button {
     background: none;
     color: rgb(183, 182, 182);
-    
+
     border: none;
     border-radius: 0px;
-    
+
     font-size: 1.1rem;
     font-weight: bold;
 
     margin: 0px 20px;
 }
 
-#top-right>div+div>button:hover{
+#top-right>div+div>button:hover {
     color: white;
-  transform: scale(1.001);
+    transform: scale(1.001);
 }
 
 
 
 
-#top-right>div+div>button+button{
+#top-right>div+div>button+button {
     background: white;
     color: black;
-    
+
     border: none;
     border-radius: 30px;
-    
+
     font-size: 1.1rem;
 
     padding: 15px 32px;
@@ -302,7 +319,7 @@ body{
 
 }
 
-#top-right>div+div>button+button:hover{
+#top-right>div+div>button+button:hover {
     color: black;
     /* font-size: 1.2em; */
     position: relative;
@@ -311,63 +328,63 @@ body{
 }
 
 
-#main-right{
-    height: fit-content;
+#main-right {
+    height: 100%;
 
 }
 
-.section{
+.section {
     height: 50vh;
     background-color: var(--primary-bkg);
     /* border: 1px solid white; */
 
 }
 
-.section-head{
+.section-head {
     height: fit-content;
     width: 100%;
     justify-content: space-between;
 }
 
-.section-head button{
+.section-head button {
     background: none;
     border: none;
     color: white;
 }
 
-.section-head>button{
+.section-head>button {
     font-size: 1.5rem;
     font-weight: bold;
     margin: 7px 22px;
 }
 
-.section-head>button + button{
+.section-head>button+button {
     font-size: 1rem;
     font-weight: normal;
     margin: 7px 22px;
 }
 
-.section-head>button:hover{
+.section-head>button:hover {
     text-underline-offset: 2px;
     text-underline-position: below;
     text-decoration: underline;
     text-decoration-thickness: 2px;
 }
 
-.section-head>button + button{
+.section-head>button+button {
     font-size: 1rem;
     font-weight: normal;
     margin: 7px 22px;
 }
 
 
-#focus-sec{
+#focus-sec {
     background: linear-gradient(rgb(31, 31, 31), var(--primary-bkg));
 }
 
 
 
-.cards{
+.cards {
     height: 80%;
     width: 100%;
     /* border: 1px solid white; */
@@ -375,7 +392,7 @@ body{
     margin-top: 15px;
 }
 
-.card{
+.card {
     width: 18%;
     /* border: 1px solid white; */
     border-radius: 8px;
@@ -384,20 +401,20 @@ body{
     padding: 15px;
     padding-bottom: 0px;
     background-color: rgb(25, 25, 25);
-    
+
 }
 
-.card:hover{
+.card:hover {
     background-color: rgb(38, 38, 38);
-    
+
 }
 
-.card-image{
+.card-image {
     height: 65%;
     /* border: 1px solid white; */
 }
 
-.card-image>img{
+.card-image>img {
     /* max-height: 100%; */
     border-radius: 5px;
     max-width: 100%;
@@ -407,7 +424,7 @@ body{
 
 
 
-.card-text>p{
+.card-text>p {
     display: block;
     font-size: 1.2rem;
     color: white;
@@ -415,20 +432,20 @@ body{
     border: 1px solid transparent;
 }
 
-.card-text>p+p{
+.card-text>p+p {
     display: block;
     font-size: 1.1rem;
     color: rgb(183, 182, 182);
     margin: 5px 0;
     border: 1px solid transparent;
-    
+
 }
 
 
 
 
-#footer{
-    background: linear-gradient(to right, rgba(175,40,150,255), rgba(80,155,245,255));
+#footer {
+    background: linear-gradient(to right, rgba(175, 40, 150, 255), rgba(80, 155, 245, 255));
     border: 1px solid transparent;
     position: sticky;
     bottom: 0;
@@ -443,20 +460,20 @@ body{
     color: white;
 }
 
-#footer>div>p{
+#footer>div>p {
     font-family: 'Open Sans', sans-serif;
     font-weight: 50;
 }
 
-#footer>div>p+p{
+#footer>div>p+p {
     font-weight: bold;
 }
 
 
-#footer button{
+#footer button {
     font-size: 1rem;
     font-weight: bold;
-    
+
     padding: 15px 25px;
 
     border: none;
